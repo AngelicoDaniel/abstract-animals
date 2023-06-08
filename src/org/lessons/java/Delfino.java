@@ -1,6 +1,6 @@
 package org.lessons.java;
 
-public class Delfino extends Animale{
+public class Delfino extends Animale implements CanSwim{
 
     @Override
     public void verso() {
@@ -10,5 +10,10 @@ public class Delfino extends Animale{
     @Override
     public void mangia() {
         System.out.println("pesce");
+    }
+
+    @Override
+    public void nuota() {
+        System.out.println("sto nuotando!");
     }
 }
